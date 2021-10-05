@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.box {
+	width: 256px;
+	height: 430px;
+	padding: 35px 35px;
+	position: relative;
+	font-family: 'Lexend Deca', sans-serif;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: 10px;
+}
+.orange {
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 10px 0 0 10px;
+}
+
+.cyan {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.darkCyan {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 10px 10px 0;
+}
+
+.content {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.heading {
+	font-family: 'Big Shoulders Display', cursive;
+	color: hsl(0, 0%, 95%);
+	margin-bottom: 20px;
+}
+
+.icon {
+	margin-bottom: 20px;
+}
+
+.orange .button {
+	color: hsl(31, 77%, 52%);
+}
+
+.cyan .button {
+	color: hsl(184, 100%, 22%);
+}
+
+.darkCyan .button {
+	color: hsl(179, 100%, 13%);
+}
+
+.button {
+	position: absolute;
+	bottom: 45px;
+	background-color: hsl(0, 0%, 95%);
+	padding: 13px;
+	border-radius: 25px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.button:hover {
+	color: hsl(0, 0%, 95%);
+	padding: 10px;
+	transition: all 0.5s;
+	border: 3px solid hsl(0, 0%, 95%);
+}
+
+.button:active {
+	bottom: 42px;
+	transition: all 0.1s;
+}
+
+.orange .button:hover {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.cyan .button:hover {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.darkCyan .button:hover {
+	background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		display: flex;
+		justify-content: center;
+		padding: 20px 25px;
+	}
+	.container {
+		display: block;
+		height: auto;
+	}
+	.box {
+		height: 380px;
+		width: auto;
+	}
+	.orange {
+		border-radius: 10px 10px 0 0;
+	}
+	.cyan {
+		border-radius: 0;
+	}
+	.darkCyan {
+		border-radius: 0 0 10px 10px;
+	}
+}
